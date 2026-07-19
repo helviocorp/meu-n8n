@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n
     runtime: docker
-    imageRepo: n8nio/n8n:latest
+    imageRepo: docker.n8n.io/n8nio/n8n:latest
     plan: starter
     region: oregon
     healthCheckPath: /
