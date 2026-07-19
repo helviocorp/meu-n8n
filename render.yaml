@@ -22,8 +22,8 @@ services:
       - key: N8N_ENCRYPTION_KEY
         sync: false
       - key: GENERIC_TIMEZONE
-        value: "America/Sao_Paulo"
+        value: "America/Sao-Paulo"
       - key: TZ
-        value: "America/Sao_Paulo"
+        value: "America/Sao-Paulo"
       - key: WEBHOOK_URL
         sync: false
