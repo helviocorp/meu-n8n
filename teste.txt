@@ -1,0 +1,63 @@
+Melhoria Visual — TRAMPO App
+Contexto
+O TRAMPO é um app de freelancer com tema preto/azul neon, layout mobile-first, usando React + Vite + TailwindCSS + Framer Motion. O app já tem uma estética futurista de radar/sonar. O objetivo é elevar o visual para um nível profissional premium, mantendo toda a funcionalidade.
+
+Mudanças Propostas
+1. Sistema de Design Global (styles.css)
+Importar fontes premium: Outfit (títulos) + Inter (corpo) via Google Fonts
+Paleta de cores refinada: trocar o azul genérico por um azul cobalto mais vibrante (hsl(220, 100%, 60%))
+Adicionar variáveis CSS de gradientes, sombras e glassmorphism reutilizáveis
+Scrollbar custom style (thin, transparente)
+Adicionar novas animações: pulse-glow, radar-scan, shimmer, float
+Remover a animação neon-glow multicolor (parece amadora) e substituir por efeito de brilho sutil e elegante
+2. Tela de Login/Landing (App.tsx)
+Header/Logo: Logo TRAMPO com gradiente animado elegante (azul → roxo) em vez de animate-neon multicolor
+Radar Hero: Adicionar efeito conic-gradient mais rico e rings mais precisos
+Cards de Planos: Design em glassmorphism com ícones maiores e hierarquia tipográfica melhorada
+Botões: Gradiente de fundo, box-shadow premium com glow suave
+Inputs: Borda com gradiente animado no focus, background levemente translúcido
+Tipografia: Fonte Outfit para títulos, Inter para texto geral
+3. Navigation Bottom Bar (BottomNavButton)
+Adicionar indicador ativo com linha/dot animado em vez de simples highlight
+Efeito glassmorphism no fundo da nav (backdrop-blur)
+Micro-animação de bounce no tap
+Spacing e padding mais elegante
+4. Global Header
+Refinamento do header: gradiente sutil, sombra mais elegante
+Badge do usuário logado com avatar mini ou iniciais
+Animação de entrada mais suave
+5. Sonar/Radar Screen
+Rings do radar mais elaborados com gradiente radial
+Centro do radar com glassmorphism e efeito de profundidade
+Card de vaga detectada com glassmorphism e gradiente de topo colorido (por tipo de contrato)
+Dots do radar com glow animado mais vistoso
+6. Profile Screen
+Avatar com ring animado e gradiente
+Cards de campo com glassmorphism sutil
+Badge de nível (Comum/Premium/Admin) com visual premium
+Botão de salvar com gradiente animado
+7. Modais e Toasts
+Glassmorphism nos modais
+Bordas com gradiente sutil
+Animações de entrada mais suaves e elegantes
+Arquivos a Modificar
+[MODIFY] 
+styles.css
+Adicionar fontes, variáveis CSS, novas animações, scrollbar, glassmorphism utilities
+[MODIFY] 
+index.html
+Adicionar link das fontes Google (Outfit + Inter)
+[MODIFY] 
+App.tsx
+Refinar tela de login/select, header, bottom nav, modais
+[MODIFY] 
+Sonar.tsx
+Refinar visual do radar, cards de vaga, controles
+[MODIFY] 
+Profile.tsx
+Refinar avatar, campos, badges, botões
+Estratégia de Implementação
+Todas as mudanças são puramente visuais — sem alterar nenhuma lógica de negócio, Firebase, roteamento ou funcionalidade existente. Apenas classes CSS e estrutura JSX de apresentação serão tocadas.
+
+
+https://github.com/XiaomiMiMo/MiMo-Code.git

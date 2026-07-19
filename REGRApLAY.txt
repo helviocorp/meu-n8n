@@ -1,0 +1,7 @@
+TRAMPO 
+
+
+Package Name (br.com.helviocorp.trampo) = "quem é o app" → NÃO pode trocar
+Version Code (137) = "versão numérica" → sempre sobe
+Version Name ("1.7.0") = "versão bonita" → pode mudar como quiser
+Keystore (release.keystore) = "assinatura digital" → NÃO pode trocar
