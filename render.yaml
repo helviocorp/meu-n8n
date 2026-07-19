@@ -4,7 +4,7 @@ services:
     runtime: image
     image:
       url: docker.n8n.io/n8nio/n8n:latest
-    plan: starter
+    plan: free
     region: oregon
     healthCheckPath: /
     envVars:
@@ -30,7 +30,3 @@ services:
         value: "America/Sao-Paulo"
       - key: WEBHOOK_URL
         sync: false
-    disk:
-      name: n8n-data
-      mountPath: /home/node/.n8n
-      sizeGB: 1
