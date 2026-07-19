@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: n8n
+    runtime: docker
+    dockerImage: n8nio/n8n:latest
+    plan: starter
+    region: oregon
+    healthCheckPath: /
+    envVars:
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_PROTOCOL
+        value: "https"
+      - key: N8N_HOST
+        value: "0.0.0.0"
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        sync: false
+      - key: N8N_BASIC_AUTH_PASSWORD
+        sync: false
+      - key: N8N_ENCRYPTION_KEY
+        sync: false
+      - key: GENERIC_TIMEZONE
+        value: "America/Sao_Paulo"
+      - key: TZ
+        value: "America/Sao_Paulo"
+      - key: WEBHOOK_URL
+        sync: false
