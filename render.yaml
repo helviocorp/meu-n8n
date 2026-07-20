@@ -2,8 +2,7 @@ services:
   - type: web
     name: n8n
     runtime: image
-    image:
-      url: docker.io/n8nio/n8n:latest
+    image: docker.io/n8nio/n8n:latest
     plan: free
     region: oregon
     healthCheckPath: /
@@ -14,12 +13,8 @@ services:
         value: "https"
       - key: N8N_HOST
         value: "0.0.0.0"
-      - key: N8N_BASIC_AUTH_ACTIVE
+      - key: N8N_SECURE_COOKIE
         value: "true"
-      - key: N8N_BASIC_AUTH_USER
-        sync: false
-      - key: N8N_BASIC_AUTH_PASSWORD
-        sync: false
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: "true"
       - key: N8N_ENCRYPTION_KEY
@@ -29,4 +24,10 @@ services:
       - key: TZ
         value: "America/Sao-Paulo"
       - key: WEBHOOK_URL
-        sync: false
+        value: "https://n8n-uee1.onrender.com"
+      - key: N8N_EDITOR_BASE_URL
+        value: "https://n8n-uee1.onrender.com"
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
