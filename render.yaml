@@ -28,7 +28,3 @@ services:
         value: "https://n8n-uee1.onrender.com"
       - key: N8N_EDITOR_BASE_URL
         value: "https://n8n-uee1.onrender.com"
-    disk:
-      name: n8n-data
-      mountPath: /home/node/.n8n
-      sizeGB: 1
